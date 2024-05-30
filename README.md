@@ -22,11 +22,11 @@
 
 # The template has the following sections:
 
--**Parameters** - Provide values during deployment.
--**Variables** - Define values that are reused in templates. They can be constructed from parameter values.
--**User-defined functions** - Create customized functions that simplify template.
--**Resources** - Specify the resources to deploy.
--**Outputs** - Return values from the deployed resources.
+- **Parameters** - Provide values during deployment.
+- **Variables** - Define values that are reused in templates. They can be constructed from parameter values.
+- **User-defined functions** - Create customized functions that simplify template.
+- **Resources** - Specify the resources to deploy.
+- **Outputs** - Return values from the deployed resources.
 
 # Modes of Deployment
 Azure Resource Manager supports two deployment modes: incremental and complete.
