@@ -35,3 +35,25 @@ The default deployment mode is incremental. In this mode, Resource Manager doesn
 
 - **Complete mode**
 You have to explicitly ask for your deployment to run in complete mode. When you use this mode, resources that exist in Azure but that aren't specified in the template are deleted. Complete mode doesn't delete all resources in your resource group. Some resource types are exempt.
+
+# Template deployment process
+To deploy a template, use any of the following options:
+- Azure portal
+- Azure CLI
+- PowerShell
+- REST API
+- Button in GitHub repository
+- Azure Cloud Shell
+  
+# Why to Use apiVersion int Template
+the apiVersion you set in the template for the resource is used as the API version for the REST operation. You can repeatedly deploy the template and have confidence it will continue to work. By using the same API version, you don't have to worry about breaking changes that might be introduced in later versions.
+
+# Template design
+- deploy your three tier application through a single template to a single resource group.
+![image](https://github.com/prasad1041/Azure-Arm-Template-Tutorial/assets/96993480/19c07f0d-125a-4630-917e-1f1edd8e9f9c)
+- deploy a three tier solution through a parent template that includes three nested templates.
+![image](https://github.com/prasad1041/Azure-Arm-Template-Tutorial/assets/96993480/5fb38a8c-ac64-4773-8673-560a811343f0)
+- deploy your three tiers to separate resource groups.
+  ![image](https://github.com/prasad1041/Azure-Arm-Template-Tutorial/assets/96993480/abd5d081-3af8-402c-9abd-1fe0c6e2747c)
+
+  
