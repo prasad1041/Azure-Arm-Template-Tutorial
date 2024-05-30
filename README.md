@@ -22,8 +22,17 @@
 
 # The template has the following sections:
 
-**Parameters** - Provide values during deployment.
-**Variables** - Define values that are reused in templates. They can be constructed from parameter values.
-**User-defined functions** - Create customized functions that simplify template.
-**Resources** - Specify the resources to deploy.
-**Outputs** - Return values from the deployed resources.
+-**Parameters** - Provide values during deployment.
+-**Variables** - Define values that are reused in templates. They can be constructed from parameter values.
+-**User-defined functions** - Create customized functions that simplify template.
+-**Resources** - Specify the resources to deploy.
+-**Outputs** - Return values from the deployed resources.
+
+# Modes of Deployment
+Azure Resource Manager supports two deployment modes: incremental and complete.
+
+- **Incremental mode**
+The default deployment mode is incremental. In this mode, Resource Manager doesn't delete anything. If resources exist in the resource group but aren't specified in the template, Resource Manager leaves them alone. Resources in the template are added to the resource group if they don't already exist, and if they do exist, Resource Manager updates them to the configuration in the template.
+
+- **Complete mode**
+You have to explicitly ask for your deployment to run in complete mode. When you use this mode, resources that exist in Azure but that aren't specified in the template are deleted. Complete mode doesn't delete all resources in your resource group. Some resource types are exempt.
