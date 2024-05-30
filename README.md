@@ -50,10 +50,10 @@ the apiVersion you set in the template for the resource is used as the API versi
 
 # Template design
 - deploy your three tier application through a single template to a single resource group.
-![image](https://github.com/prasad1041/Azure-Arm-Template-Tutorial/assets/96993480/19c07f0d-125a-4630-917e-1f1edd8e9f9c)
+- ![image](https://github.com/prasad1041/Azure-Arm-Template-Tutorial/assets/96993480/19c07f0d-125a-4630-917e-1f1edd8e9f9c)
 - deploy a three tier solution through a parent template that includes three nested templates.
-![image](https://github.com/prasad1041/Azure-Arm-Template-Tutorial/assets/96993480/5fb38a8c-ac64-4773-8673-560a811343f0)
+- ![image](https://github.com/prasad1041/Azure-Arm-Template-Tutorial/assets/96993480/5fb38a8c-ac64-4773-8673-560a811343f0)
 - deploy your three tiers to separate resource groups.
-  ![image](https://github.com/prasad1041/Azure-Arm-Template-Tutorial/assets/96993480/abd5d081-3af8-402c-9abd-1fe0c6e2747c)
+- ![image](https://github.com/prasad1041/Azure-Arm-Template-Tutorial/assets/96993480/abd5d081-3af8-402c-9abd-1fe0c6e2747c)
 
   
